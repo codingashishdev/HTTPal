@@ -1,13 +1,26 @@
 {
   "name": "httpal",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A lightweight and easy-to-use command-line HTTP client for making requests and inspecting responses.",
+  "main": "dist/index.js",
+  "bin": {
+    "httpal": "dist/index.js"
+  },
   "scripts": {
+    "build": "tsc",
+    "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "http",
+    "cli",
+    "request",
+    "fetch",
+    "curl",
+    "api",
+    "rest"
+  ],
+  "author": "Ashish",
   "license": "ISC",
   "type": "module",
   "devDependencies": {
